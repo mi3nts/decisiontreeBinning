@@ -20,3 +20,19 @@ To use the method on your own data use the getOptimalBands() function in getOpti
 Visual overview of how decision trees can be used to derive frequnecy bands. A single predictor variable (frequency) to estimate a single target variable (natural logarithm of the power spectral density). The decision tree then splits frequency values into subgroups and assigns each subgroup a single target value prediction. A greedy search of the decision tree parameter space yields frequency splits that best reproduce target values. Thus, through this optimization process we automatically obtain the optimal member-adjacent frequency bands for a predefined number of bands.
 
 ![Overview](/visuals/other_figures/method_overview.jpeg)
+
+## How to cite
+
+If you find value in this work please use the following citation: 
+
+`Talebi S., et al. decisiontreeBinning. 2022. https://github.com/mi3nts/decisiontreeBinning`
+
+__Bibtex__:
+```
+@misc{LightOcular,
+authors={Shawhin Talebi, John Waczak, Bharana Fernando, Arjun Sridhar, David J. Lary},
+title={decisiontreeBinning},
+howpublished={https://github.com/mi3nts/decisiontreeBinning}
+year={2022}
+}
+```
