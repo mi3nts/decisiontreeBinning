@@ -29,7 +29,7 @@ If you find value in this work please use the following citation:
 
 __Bibtex__:
 ```
-@misc{LightOcular,
+@misc{decisiontreeBinning,
 authors={Shawhin Talebi, John Waczak, Bharana Fernando, Arjun Sridhar, David J. Lary},
 title={decisiontreeBinning},
 howpublished={https://github.com/mi3nts/decisiontreeBinning}
