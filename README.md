@@ -23,7 +23,7 @@ Visual overview of how decision trees can be used to derive frequnecy bands. A s
 
 ## How to cite
 
-If you find value in this work please use the following citation: 
+If you find value in this work and would like to reference it, please use the following citation: 
 
 `Talebi S., et al. decisiontreeBinning. 2022. https://github.com/mi3nts/decisiontreeBinning`
 
