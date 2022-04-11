@@ -219,10 +219,10 @@ def plotDTB_2to6_bands(f, ps, name):
     plt.figure(figsize=(18, 20))
     for num_bins in bin_sizes:
 
-        title_fonts=20
+        title_fonts=24
         bin_edge_fonts=16
         other_fonts=24
-        line_width = 3
+        line_width = 4
 
         # compute bins with decision tree
         bin_dict, clf = decisionTreeBinning(num_bins, f, ps)
@@ -268,7 +268,7 @@ def plotDTB_2to6_bands(f, ps, name):
         plt.yticks(fontsize= other_fonts)
 
     # xlabel
-    plt.xlabel("Frequency", fontsize=20)
+    plt.xlabel("Frequency", fontsize=other_fonts)
 
     fig = plt.gcf()
     fig.tight_layout(pad=3.0)
@@ -327,8 +327,8 @@ def plotR2vsNumBands(f, ps, name):
     viridis = mpl.cm.get_cmap('inferno', 128)
 
     for i in range(len(steps)):
-        plt.semilogx([steps[i], steps[i]], [0.5, 1], linestyle='-.', color=viridis(i/(len(steps)+1)), linewidth=1.25)
-        plt.text(steps[i], 1.02, "n = " + str(steps[i]), color=viridis(i/(len(steps)+1)), fontsize=16, horizontalalignment='center')
+        plt.semilogx([steps[i], steps[i]], [0.5, 1], linestyle='-.', color=viridis(i/(len(steps)+1)), linewidth=2)
+        plt.text(steps[i], 1.02, "n = " + str(steps[i]), color=viridis(i/(len(steps)+1)), fontsize=17, horizontalalignment='center')
 
     # plt.plot(ar2_array, linewidth=2)
     plt.xlabel('Number of bands (n)')
@@ -517,10 +517,10 @@ def getOptimalBands(f, ps):
 def plotOptimalBands(f, ps, name):
 
     # define plotting parameters
-    title_fonts=24
+    title_fonts=28
     bin_edge_fonts=18
     other_fonts=24
-    line_width = 3
+    line_width = 4
 
     # compute optimal bands
     optimal_num_bands, optimal_band_dict, clf, min_QS = getOptimalBands(f, ps)
@@ -642,7 +642,7 @@ def getExperimentalData():
 def plotExperimentalData(O, f, p):
 
     plt.figure(figsize=(24, 10))
-    font_size = 24
+    font_size = 28
     lw = 3
     plt.rcParams.update({'font.size': font_size})
 
@@ -692,10 +692,10 @@ def plotExperimentalData(O, f, p):
 def plotOptimalBands_withCS1(f, ps, name):
 
     # define plotting parameters
-    title_fonts=24
+    title_fonts=28
     bin_edge_fonts=18
     other_fonts=24
-    line_width = 3
+    line_width = 4
 
     # compute optimal bands
     optimal_num_bands, optimal_band_dict, clf, min_QS = getOptimalBands(f, ps)
