@@ -2,6 +2,8 @@
 
 Software implementation of the EEG band discovery method described in the paper: Data-Driven EEG Band Discovery with Decision Trees. The method determinines the best EEG bands for a given dataset using a two-part approach. First, a decision tree-based technique is used to estimate the optimal frequency band boundaries for reproducing the signal's power spectrum for a every possible number of bands. Then, the optimal number of bands is determined using an AIC-inspired quality score that balances goodness-of-fit with a small band count.
 
+Link to paper: https://www.mdpi.com/1424-8220/22/8/3048
+
 ## Getting Started
 Software was written in Python 3.7.4. To get started clone this repo and install the requirements via the following command. 
 ```
